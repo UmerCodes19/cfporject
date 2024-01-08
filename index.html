@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!--=============== FAVICON ===============-->
+   <link rel="shortcut icon" href="assets/img/SoleMates.png" type="image/x-icon">
+
+   <!--=============== REMIXICONS ===============-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+
+   <!--=============== SWIPER CSS ===============-->
+   <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+   <!--=============== CSS ===============-->
+   <link rel="stylesheet" href="assets/css/styles.css">
+   <!-- CSS for the second part -->
+   <link rel="stylesheet" href="assets/css/style.css">
+
+   <!-- BOX ICONS -->
+   <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+   <!-- Favicon for the second part -->
+   <link rel="icon" href="assets/img/SoleMates.png" type="image/gif" sizes="32x32">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+<style>
+
+.nav__logo img {
+            width: 150px; /* Adjust the width to make the logo larger */
+            height: 150px; /* Maintain the aspect ratio */
+            margin-left: 70%;
+        }
+       
+
+
+
+        .splash-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffb9b9; /* You can set a background color or use an image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    z-index: 10000; 
+}
+
+.splash-content {
+    text-align: center;
+    color: #ffffff;
+}
+
+.splash-content h1 {
+    font: size 100px;
+    margin-bottom: 10px;
+}
+
+.splash-content p {
+    font-size: 50px;
+}
+.nav__search {
+    margin-left: auto; /* Push the search bar to the right */
+    display: flex;
+    margin-bottom: -5;
+}
+
+.nav__search-input {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+}
+
+.nav__search-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.newsletter {
+  background-color: #fff; /* Set a background color */
+  padding: 20px; /* Add some padding to the section */
+  text-align: center; /* Center-align the content */
+}
+
+.newsletter__subscribe {
+  margin-top: 20px; /* Add some space above the form */
+}
+
+.newsletter__input {
+  padding: 10px; /* Adjust padding for the input field */
+}
+</style>
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper/swiper-bundle.min.css"
+/>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <title>SoleMates</title>
+</head>
+<body>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+    // Simulate an asynchronous task (e.g., loading resources) before hiding the splash screen
+    setTimeout(function () {
+        hideSplashScreen();
+    }, 1000); // Adjust the time (in milliseconds) based on your animation duration
+});
+
+function hideSplashScreen() {
+    const splashScreen = document.getElementById('splashScreen');
+    if (splashScreen) {
+        splashScreen.style.opacity = 0;
+        setTimeout(function () {
+            splashScreen.style.display = 'none';
+        }, 1000); // Adjust the time (in milliseconds) based on your fade-out duration
+    } else {
+        console.error("Splash screen element not found.");
+    }
+}
+
+
+
+    </script>
+    <!-- HEADER -->
+    <header class="l-header" id="header">
+        <nav class="nav bd-grid">
+           
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="bx bxs-grid"></i>
+            </div>
+
+            
+    
+
+
+            <a href="./index.html" class="nav__logo">
+                <img src="C:\Users\wajiz.pk\Desktop\SoleMates.png" alt="Your Logo Alt Text">
+            </a>
+             
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="#featured" class="nav__link">Featured</a></li>
+                    <li class="nav__item"><a href="#women" class="nav__link">Women</a></li>
+                    <li class="nav__item"><a href="#new" class="nav__link">New</a></li>
+                    <li class="nav__item"><a href="./checkout.html" class="nav__link">Checkout</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__shop">
+                <i class="bx bx-shopping-bag"></i>
+            </div>
+            
+        </nav>
+        
+    </header>
+
+    <div class="nav__search">
+        <input type="text" class="nav__search-input" placeholder="Search">
+        <button class="nav__search-button">
+            <i class="bx bx-search"></i>
+        </button>
+    </div>
+    <div class="splash-screen" id="splashScreen">
+        <div class="splash-content">
+            <h1>W e l c o m e !</h1>
+            <p>looking for a SoleMate?</p>
+        </div>
+    </div>
+
+
+    <!-- MAIN -->
+    <main class="l-main">
+       <section class="home" id="home">
+        <section class="home" id="home">
+            <div class="home__container container">
+                <div class="home__data">
+                    <h2 class="home__subtitle">NIKE</h2>
+                    <h1 class="home__title">
+                        LUPINEK<br>
+                        FLYKNIT<br>
+                        ACG
+                    </h1>
+                    <p class="home__description">
+                        Designed to withstand the rigors of adverse conditions, the Nike ACC Flyknit Lupinek combines
+                        flyknit, Flywire and a water-resistant Defender Repellent system in the upper.
+                    </p>
+                    <a href="shop.html" class="home__button">BUY NOW</a>
+                </div>
+                <div class="home__images">
+                    <div class="home__circle"></div>
+                    <div class="home__swiper swiper">
+                        <div class="swiper-wrapper">
+                            <article class="home__article swiper-slide">
+                                <img src="assets/img/shoe-1.png" alt="" class="home__shoe">
+                            </article>
+                            <article class="home__article swiper-slide">
+                                <img src="assets/img/shoe-2.png" alt="" class="home__shoe">
+                            </article>
+                            <article class="home__article swiper-slide">
+                                <img src="assets/img/shoe-3.png" alt="" class="home__shoe">
+                            </article>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="home__social">
+                    <a href="https://www.facebook.com/nike/" target="_blank" class="home__social-link">
+                        <i class="ri-facebook-circle-fill"></i>
+                    </a>
+                    <a href="https://www.instagram.com/nike/" target="_blank" class="home__social-link">
+                        <i class="ri-instagram-fill"></i>
+                    </a>
+                    <a href="https://youtube.com/nike/" target="_blank" class="home__social-link">
+                        <i class="ri-youtube-fill"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured -->
+        <section class="featured section" id="featured">
+            <h2 class="section-title">FEATURED</h2>
+
+            <div class="featured__container bd-grid">
+                <article class="sneaker">
+                    <div class="sneaker__sale">Sale</div>
+                    <img src="assets/img/featured1.png" alt="" class="sneaker__img">
+                    <span class="sneaker__name">Nike Jordon</span>
+                    <span class="sneaker__preci">$149.99</span>
+                    <a href="" class="button-light">Add to Cart <i class="bx bx-right-arrow-alt button-icon"></i> </a>
+                </article>
+
+                <article class="sneaker">
+                    <div class="sneaker__sale">Sale</div>
+                    <img src="assets/img/featured2.png" alt="" class="sneaker__img">
+                    <span class="sneaker__name">Nike Free RN</span>
+                    <span class="sneaker__preci">$149.99</span>
+                    <a href="" class="button-light">Add to Cart <i class="bx bx-right-arrow-alt button-icon"></i> </a>
+                </article>
+
+                <article class="sneaker">
+                    <div class="sneaker__sale">Sale</div>
+                    <img src="assets/img/featured3.png" alt="" class="sneaker__img">
+                    <span class="sneaker__name">Nike Free RN</span>
+                    <span class="sneaker__preci">$149.99</span>
+                    <a href="" class="button-light">Add to Cart <i class="bx bx-right-arrow-alt button-icon"></i> </a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Collection -->
+        <section class="collection section">
+            <div class="collection__container bd-grid">
+                <div class="collection__card">
+                    <div class="collection__data">
+                        <h3 class="collection__name">Nike</h3>
+                        <p class="collection__description">New collection 2021</p>
+                        <a href="#" class="button-light">But now <i class="bx bx-right-arrow-alt button-icon"></i></a>
+                    </div>
+
+                    <img src="assets/img/collection1.png" alt="" class="collection__img">
+                </div>
+
+                <div class="collection__card">
+                    <div class="collection__data">
+                        <h3 class="collection__name">Addidas</h3>
+                        <p class="collection__description">New collection 2021</p>
+                        <a href="#" class="button-light">But now <i class="bx bx-right-arrow-alt button-icon"></i></a>
+                    </div>
+
+                    <img src="assets/img/collection2.png" alt="" class="collection__img">
+                </div>
+            </div>
+        </section>
+
+        <!-- Women Sneakers -->
+        <section class="women section" id="women">
+            <h2 class="section-title">WOMEN SNEAKERS</h2>
+            <div class="women__container bd-grid">
+                    <article class="sneaker">
+                        <img src="assets/img/women1.png" alt="" class="sneaker__img">
+                        <span class="sneaker__name">Nike Free TR</span>
+                        <span class="sneaker__preci">$129.99</span>
+                        <a href="" class="button-light">Add to Cart <i class="bx bx-right-arrow-alt button-icon"></i> </a>
+                    </article>
+
+                    <article class="sneaker">
+                        <img src="assets/img/women2.png" alt="" class="sneaker__img">
+                        <span class="sneaker__name">Nike Free TR</span>
+                        <span class="sneaker__preci">$129.99</span>
+                        <a href="" class="button-light">Add to Cart <i class="bx bx-right-arrow-alt button-icon"></i> </a>
+                    </article>
+
+                    <article class="sneaker">
+                        <img src="assets/img/women3.png" alt="" class="sneaker__img">
+                        <span class="sneaker__name">Nike GS Pink</span>
+                        <span class="sneaker__preci">$129.99</span>
+                        <a href="" class="button-light">Add to Cart <i class="bx bx-right-arrow-alt button-icon"></i> </a>
+                    </article>
+
+                    <article class="sneaker">
+                        <img src="assets/img/women4.png" alt="" class="sneaker__img">
+                        <span class="sneaker__name">Nike Get 5</span>
+                        <span class="sneaker__preci">$129.99</span>
+                        <a href="" class="button-light">Add to Cart <i class="bx bx-right-arrow-alt button-icon"></i> </a>
+                    </article>
+            </div>
+        </section>
+
+        <!-- Offer -->
+        <section class="offer section">
+            <div class="offer__container bd-grid">
+                <div class="offer__data">
+                    <h3 class="offer__title">50% OFF</h3>
+                    <p class="offer__description">In Adidas Superstar sneaker</p>
+                    <a href="#" class="button">Shop now</a>
+                </div>
+
+                <img src="assets/img/offert.png" alt="" class="offer__img">
+            </div>
+        </section>
+
+        <!-- New Collection -->
+        <section class="new section" id="new">
+            <h2 class="section-title">NEW COLLECTION</h2>
+
+            <div class="new__container bd-grid">
+                <div class="new__mens">
+                    <img src="assets/img/new1.png" alt="" class="new__mens-img">
+                    <h3 class="new__title">Mens Shoes</h3>
+                    <span class="new__preci">From $79.99</span>
+                    <a href="./checkout.html" class="button-light">View Collection <i class="bx bx-right-arrow-alt button-icon"></i></a>
+                </div>
+
+                <div class="new__sneaker">
+                    <div class="new__sneaker-card">
+                        <img src="assets/img/new2.png" alt="" class="new__sneaker-img">
+                        <div class="new__sneaker-overlay">
+                        </div>
+                    </div>
+
+                    <div class="new__sneaker-card">
+                        <img src="assets/img/new3.png" alt="" class="new__sneaker-img">
+                        <div class="new__sneaker-overlay">
+                        </div>
+                    </div>
+
+                    <div class="new__sneaker-card">
+                        <img src="assets/img/new4.png" alt="" class="new__sneaker-img">
+                        <div class="new__sneaker-overlay">
+                        </div>
+                    </div>
+
+                    <div class="new__sneaker-card">
+                        <img src="assets/img/new5.png" alt="" class="new__sneaker-img">
+                        <div class="new__sneaker-overlay">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer section">
+        <div class="footer__container bd-grid">
+            <div class="footer__box">
+                <h3 class="footer__title">SoleMates</h3>
+                <p class="footer_description">New collection of shoes 2021.</p>
+            </div>
+
+            <div class="footer__box">
+                <h3 class="footer__title">EXPLORE</h3>
+                <ul>
+                    <li><a href="#home" class="footer__link">Home</a></li>
+                    <li><a href="#featured" class="footer__link">Featured</a></li>
+                    <li><a href="#women" class="footer__link"></a>Women</li>
+                    <li><a href="#new" class="footer__link"></a>New</li>
+                </ul>
+            </div>
+
+            <div class="footer__box">
+                <h3 class="footer__title">SUPPORT</h3>
+                <ul>
+                    <li><a href="#home" class="footer__link">Product Help</a></li>
+                    <li><a href="#featured" class="footer__link">Customer Care</a></li>
+                    <li><a href="#women" class="footer__link"></a>Authorized service</li>
+                </ul>
+            </div>
+
+            <div class="footer__box">
+                <a href="https://www.facebook.com/nike/" class="footer__social"><i class="bx bxl-facebook"></i></a>
+                <a href="https://www.instagram.com/nike/" class="footer__social"><i class="bx bxl-instagram"></i></a>
+                <a href="https://www.twitter.com/nike/" class="footer__social"><i class="bx bxl-twitter"></i></a>
+                <a href="google.com" class="footer__social"><i class="bx bxl-google"></i></a>
+            </div>
+        </div>
+
+        <p class="footer__copy">&#169; 2024 SoleMates. All right reserved</p>
+    </footer>
+
+    <!-- MAIN JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

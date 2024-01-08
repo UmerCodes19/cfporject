@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- Add your other stylesheets, scripts, and icons here -->
+
+    <style>
+         body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f5f5f5;
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+
+    .add-to-cart {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        text-align: center;
+    }
+
+    .add-to-cart img {
+            width: 250px;  /* Adjust the percentage to your preference */
+            height:250px;
+            margin-bottom: 20px;
+            animation: fadeInUp 1s ease-out;
+        }
+
+    .product-details {
+        text-align: left;
+        margin-bottom: 20px;
+        animation: fadeInLeft 1s ease-out;
+    }
+
+    .product-details h3 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+
+    .product-details p {
+        font-size: 1em;
+        margin-bottom: 20px;
+    }
+
+    .product-price {
+        font-size: 1.5em;
+        color: #e44d26;
+        margin-bottom: 20px;
+        animation: fadeInRight 1s ease-out;
+    }
+
+    .button {
+        display: inline-block;
+        background-color: #e44d26;
+        color: #fff;
+        padding: 10px 20px;
+        font-size: 1.2em;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+        animation: fadeInUp 1s ease-out;
+    }
+
+    .button:hover {
+        background-color: #333;
+    }
+
+    /* Add animations */
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes fadeInLeft {
+        from {
+            opacity: 0;
+            transform: translateX(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes fadeInRight {
+        from {
+            opacity: 0;
+            transform: translateX(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+    </style>
+
+    <title>Add to Cart - SoleMates</title>
+</head>
+<body>
+    <!-- Header (Similar to the other pages) -->
+    <!-- Add your header code here -->
+
+    <!-- Main Content -->
+    <main class="l-main">
+        <section class="add-to-cart">
+            <h2>Add to Cart</h2>
+            <img src="assets/img/shoe-1.png"  alt="Product Image">
+
+            <div class="product-details">
+                <h3>Nike Jordon</h3>
+                <p>Designed to provide ultimate comfort and style.</p>
+            </div>
+
+            <div class="product-price">$149.99</div>
+
+            <a href="checkout.html" class="button">Add to Cart <i class="bx bx-right-arrow-alt button-icon"></i></a>
+        </section>
+    </main>
+
+    <!-- Footer (Similar to the other pages) -->
+    <!-- Add your footer code here -->
+
+    <!-- Add your scripts, such as Bootstrap and custom scripts, at the end of the body -->
+
+</body>
+</html>
